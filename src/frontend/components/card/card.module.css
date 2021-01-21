@@ -1,0 +1,68 @@
+.cardContainer {
+    padding: 10px 0;
+    width: 100%;
+}
+
+.card {
+    position: relative;
+    height: 120px;
+    padding: 15px;
+    background-color: #191919;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 4px 10px 0 #999999;
+}
+
+.cardTitle {
+    max-width: 200px;
+    margin: 0;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cardInfo {
+    font-size: 0.8rem;
+    color: gray;
+}
+
+.cardBadge {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 28px;
+    height: 35px;
+    background-color: #e85c0a;
+    font-size: 0.8rem;
+    border-bottom-left-radius: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 576px) {
+    .cardContainer {
+        padding: 10px;
+        width: 260px;
+    }
+}
+
+@media (min-width: 768px) {
+    .cardContainer {
+        width: 355px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .cardContainer {
+        width: 400px;
+    }
+    .cardTitle {
+        max-width: 270px;
+    }
+}
