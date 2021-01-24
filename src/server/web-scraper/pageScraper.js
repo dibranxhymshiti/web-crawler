@@ -18,7 +18,7 @@ const scraper = async (browser, searchTerm) => {
 
     // Scrap libraries for each link
     let scrapedLibraries = [];
-    for(let link in urls){
+    for (let link in urls) {
         console.log(`Scraping libraries from: ${urls[link]} ...`);
         let currentPageLibraries = await pageLibrariesPromise(browser, urls[link]);
         scrapedLibraries = await scrapedLibraries.concat(currentPageLibraries);

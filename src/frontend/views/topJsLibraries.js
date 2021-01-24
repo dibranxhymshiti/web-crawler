@@ -40,7 +40,6 @@ const TopJsLibraries = () => {
     }
 
     const topLibraries = libraries.map((library, index) => {
-        console.log('bushi')
         return <Card key={library.libraryName} data={library} position={index}/>
     })
 
